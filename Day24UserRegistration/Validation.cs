@@ -44,5 +44,12 @@ namespace Day24UserRegistration
             else
                 return "Password regex faild";
         }
+
+        //Lambada Experession uc13
+        public bool ValidationFirstName(string input) => Regex.IsMatch(input, Name) ? true : false;
+        public bool ValidationLasttName(string input) => Regex.IsMatch(input, Name) ? true : false;
+        public bool ValidationEmail(string input) => Regex.IsMatch(input, Email) ? true : false;
+        public bool ValidationMobile(string input) => Regex.IsMatch(input, MobileNumber) ? true : false;
+        public bool ValidationPassword(string input) => Regex.IsMatch(input, Password) ? true : false;
     }
 }

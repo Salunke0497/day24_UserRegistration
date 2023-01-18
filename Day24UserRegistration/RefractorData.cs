@@ -19,11 +19,6 @@ namespace Day24UserRegistration
         {
             this.input1 = input1;
         }
-        /// <summary>
-        /// name
-        /// </summary>
-        /// <returns></returns>
-        /// <exception cref="ExceptionRegularRegistration"></exception>
         public string TestName_Refactor()
         {
 
@@ -35,11 +30,7 @@ namespace Day24UserRegistration
                 return "First/last name regex failed";
 
         }
-        /// <summary>
-        /// Password
-        /// </summary>
-        /// <returns></returns>
-        /// <exception cref="ExceptionRegularRegistration"></exception>
+       
         public string TestPassword_Refactor()
         {
             if (this.input1.Equals(string.Empty))
@@ -49,11 +40,7 @@ namespace Day24UserRegistration
             else
                 return "Password regex failed";
         }
-        /// <summary>
-        /// Mobile number
-        /// </summary>
-        /// <returns></returns>
-        /// <exception cref="ExceptionRegularRegistration"></exception>
+       
         public string TestMobile_Refactor()
         {
 
@@ -64,11 +51,7 @@ namespace Day24UserRegistration
             else
                 return "Mobile number regex failed";
         }
-        /// <summary>
-        /// Email
-        /// </summary>
-        /// <returns></returns>
-        /// <exception cref="ExceptionRegularRegistration"></exception>
+       
         public string TestEmail_Refector()
         {
             if (this.input1.Equals(string.Empty))
