@@ -49,5 +49,17 @@ namespace TEST
             string output = code.TestName(input);
             Assert.AreEqual(input, output);
         }
+        
+       //UC11 
+
+        [TestMethod]
+        public void CheckGiven_Email_Validation_usingParamerterisum()
+        {
+            string input = "abc@xyzhg.com";
+            RefactorData emailRefactor = new RefactorData(input);
+
+            string output = emailRefactor.TestEmail_Refector();
+            Assert.AreEqual("Email  matches", output);
+        }
     }
 }
